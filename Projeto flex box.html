@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A pizza + braba</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/51f7ea6787.js
+    " crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <a href="#"><img src="img-pizza.png" alt="Logo pizza"></a>
+        <nav id="nav">
+            <button id="btnMobile" aria-label='Abrir Menu' onclick="toggleMenu()" aria-controls='menu' aria-haspopup='true' aria-expanded="false">Menu
+                <span id="hamb"></span>
+            </button>
+            <ul class="menu" role="menu">
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle" target="_blank">Home</a>
+                </li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Experimente nossa Pizza de Pepperoni</h1>
+            <h3>"Sabor, gostosura e fineza juntos em uma pizza"</h3>
+            <a href="" class="btn">Encomende ja</a>
+        </section>
+        <section class="pizzaria">
+            <h3>Conheça nossa pizzaria</h3>
+            <p>As melhores e mais deliciosas pizzas de franca e região. Reunindo sabores de todo o mundo</p>
+            <hr>
+            <ul class="grid">
+                <li class="large" style="background-image: url(./pizza-01.jpg);"></li>
+                <li class="small" style="background-image:  url(./pizza-02.jpg);"></li>
+                <li class="small" style="background-image: url(./pizza-03.jpg);"></li>
+                <li class="large" style="background-image: url(./pizza-04.jpg);"></li>
+            </ul>  
+        </section>
+        <section class="caracteristicas">
+            <h3>A melhor pizzaria rústica da região</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum voluptate dolor, optio animi ea delectus omnis dicta alias expedita magni nostrum</p>
+            <hr>
+            <ul class="cards">
+                <li>
+                    <i class="fas fa-location-arrow"></i>
+                    <h4>Localização</h4> 
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus, debitis hic, consectetur provident enim error, delectus quaerat consequuntur ipsam sint nihil. Architecto officiis numquam velit inventore blanditiis mollitia dolores.
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-gift"></i>
+                    <h4>Promoções</h4> 
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, sapiente tenetur et praesentium explicabo hic doloremque ipsa mollitia beatae provident? Id exercitationem sapiente, suscipit velit perferendis similique sequi alias tempore.
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <h4>Contato</h4> 
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi consequatur deleniti optio esse placeat cumque quibusdam dolorum voluptatibus eos a perspiciatis, quam pariatur asperiores. Rerum voluptatum esse corporis illum!
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Assine nossa newsletter para receber comunicados sobre novas pizzas e diversas promoções!</p>
+            <hr>
+            <form action="#">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <button type="submit" id="Assinar">Assinar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-whatsapp"></i></li>
+            <li><i class="fab fa-pinterest"></i></li>
+        </ul>
+        <p>Todos os direitos reservados - @luis0013</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+*{
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+li, ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover{
+    opacity: 1;
+}
+
+/* HEADER */
+header{
+    background-color: #D15D68;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    padding: 10px 50px;
+}
+header img{
+    width: 100px;
+    height: 100px;
+}
+header .menu{
+    display: flex;
+}
+header li a{
+    color:#FFE07D;
+    padding: .5rem;
+}
+header li{
+    margin: 0 15px
+}
+header li:first-child{
+    margin-left: 0;
+}
+header li:last-child{
+    margin-right: 0;
+}
+
+/* Main */
+section.hero{
+    background-image: url(./pepperoni.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+section.hero h1{
+    font-size: 3.2rem;
+    margin-bottom: 0.8rem;
+}
+section.hero h3{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.btn{
+    background-color: white;
+    padding: 1.25rem 2.8rem;
+    border-radius: 0.6rem;
+    text-transform: uppercase;
+}
+#btnMobile{
+    display: none;
+}
+/* Conheça a pizzaria */
+.pizzaria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.pizzaria h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #E4936B;
+    text-align: center;
+}
+.pizzaria p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #E4936B;
+    text-align: center;
+}
+.pizzaria hr{
+    width: 200px;
+    height: 3px;
+    background-color: #A9D996;
+    margin-bottom: 70px;
+    border: none;
+}
+.pizzaria .grid{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.pizzaria .grid li{
+    height: 350px;
+    border-radius: 4px;
+    background-size: cover;
+    background-clip: content-box;
+    padding: 20px;
+    background-position: center;
+}
+.pizzaria .grid li.small{
+    flex-basis: 40%;
+}
+.pizzaria .grid li.large{
+    flex-basis: 60%;
+}
+
+/* Características */
+.caracteristicas{ 
+    background-color: #050402;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.caracteristicas h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #fff;
+    margin-top: 40px;
+}
+.caracteristicas p{
+    margin-bottom: 35px;
+    color: #fff;
+    max-width: 50rem;
+}
+.caracteristicas hr{
+    width: 200px;
+    height: 2px;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 70px;
+}
+/* pizzaria card */
+.caracteristicas .cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.caracteristicas .cards li{
+    padding: 0 30px;
+}
+.caracteristicas .cards li i{
+    color:#E4936B;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+.caracteristicas .cards li h4{
+    color: #E4936B;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+.caracteristicas .cards p{
+    max-width: 400px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+/* Newsletter */
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+.newsletter h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #E4936B;
+}
+.newsletter p{
+    margin-bottom: 35px;
+    color: #E4936B;
+    max-width: 50rem;
+    text-align: center;
+}
+.newsletter hr{
+    width: 200px;
+    height: 2px;
+    border: none;
+    background-color: #A9D996;
+}
+.newsletter form{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+}
+.newsletter form #email{
+    flex: 1;
+    border: 2px solid #E4936B;
+    margin-right: 10px;
+    padding: .8rem;
+    border-radius: .3rem;
+}
+.newsletter form button{
+    border: none;
+    background-color: #E4936B;
+    border-radius: .3rem;
+    color: white;
+    padding: .9rem;
+    width: 100px;
+    cursor: pointer;
+    opacity: .8;
+    text-transform: uppercase;
+}
+button#Assinar:hover{
+    opacity: 1;
+}
+footer{
+    background-color: #050402;
+    padding: 50px 0;
+    height: 100%;
+    width: 100%;
+}
+footer ul{
+    color: #E4936B;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+footer li{
+    padding: 0 10px;
+}
+footer p{
+    display: flex;
+    color: #E4936B;
+    justify-content: center;
+    text-align: center;
+}
+/* Responsive */
+@media (max-width: 680px){
+    header{
+        flex-direction: column;
+    }
+    header nav{
+        margin-top: 15px;
+    }
+    header img{
+        width: 80px;
+        height: 80px;
+    }
+    section.hero h1{
+        font-size: 2.5rem;
+    }
+    section.hero h3{
+        font-size: 1.5rem;
+    }
+    .pizzaria .grid li.small, .pizzaria .grid li.large{
+        flex-basis: 100%;
+    }
+    .newsletter form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .newsletter input{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+@media (max-width: 850px){
+    .caracteristicas .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 600px){
+    header{
+        flex-direction: row;
+    }
+    nav .menu{
+        position: absolute;
+        width: 100%;
+        top: 104px;
+        right: 0;
+        background-color: #aa4953;
+        transition: .6s;
+        height: 0;
+        overflow-y: hidden;
+        visibility: hidden;
+        z-index: 1000;
+    }
+    
+    #nav.active .menu{
+        display: block;
+        height: calc(100vh - 104px);
+        visibility: visible;
+    }
+    .menu li{
+        padding: .5rem 0;
+        margin: 30px 40px;  
+        border-bottom: 1px solid #83363d; 
+    }
+    .menu li:nth-child(1){
+        margin-left: 40px;
+    }
+    .menu li:nth-child(4){
+        margin-right: 40px;
+    }
+
+    #btnMobile{
+        display: flex;
+        border: none;
+        cursor: pointer;
+        background: none;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        gap: .5rem;
+    }
+    #hamb{
+        border-top: 3px solid;
+        width: 25px;
+    }
+    #hamb::after, 
+    #hamb::before{
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 5px;
+        position: relative;
+        transition: .3s;
+    } 
+    #nav.active #hamb{
+        border-top-color: transparent;
+    }
+    #nav.active #hamb::after{
+        transform: rotate(135deg);
+        top: -8px;
+    }
+    #nav.active #hamb::before{
+        transform: rotate(-135deg);
+        
+    }
+}
